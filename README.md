@@ -46,9 +46,9 @@ This is the Front-End repo of the project StartHub.
 git clone https://github.com/zuri-training/starthub-fe-pjt-02.git
 
 ```
-3. Create a branch 
+3. Go into the **starthub-fe-pjt-02** folder, create a branch 
 ```
-git checkout -b (branch name)
+git checkout -b (working branch name)
 
 ```
 
@@ -57,12 +57,12 @@ git checkout -b (branch name)
 git remote add upstream https://github.com/zuri-training/starthub-fe-pjt-02.git
 
 ```
-5. Fetch commits from the remote/upstream branch:
+5. Fetch commits/changes from the remote/upstream branch:
 ```
 git fetch upstream
 
 ```
-6. Make your changes, then stage them, commit and push:
+6. Make your changes, stage them, commit and push:
 ```
 git add .
 git commit -m 'commit message'
