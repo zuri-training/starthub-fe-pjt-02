@@ -9,43 +9,42 @@
     
 }
 
-
 .navbar{
-    display: flex;
-    background-color:white;
-    justify-content:space-around;
-    padding: 2rem 3rem;
-    margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 6rem;
 }
-.navbar img{
-    height: 60px;
-    margin-left: 1em;
-    margin-top: 1em;
+
+
+.logo{
+  float:left;
+  margin-left: 40px;
+  margin: 20px 0 60px 0;
+  height: 30px;
 }
+
+span{
+  float: right;
+  margin-right: 60px;
+  margin: 20px 0 60px 0;
+  font-family: open sans-serif;
+}
+
+span a{
+  background:#363A99;;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-family: open sans-serif;
+  margin-right: 70px;
+  padding-right: 15px;
+  margin-left: 10px;
+}
+
 /* div.nav-btn{
 } */
-span{
-    margin-left: 40em;
-    font-family: open sans-serif;
-    }
-
-span{
-    margin-right: 10px;
-}
-
-.nav-btn a{
-    background:#363A99;;
-    text-decoration: none;
-    color: white;
-    font-size: 0.9rem;
-    padding: 8px 10px;
-    border-radius: 20px;
-    font-family: open sans-serif;
-    margin-right: 70px;
-   
-}
-
-
 
 h2{
     text-align: center;
@@ -54,29 +53,31 @@ h2{
     font-size:25px;
     margin-left: 30%;
     margin-right:30%;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     font-family: open sans-serif;
 }
 
 @media screen and (max-width:768px){
-  .navbar{
-    display: flex;
+    .logo{
+        margin-left: -18px;
+        height: 20px;
+    }
     
-}
-    .nav-btn{
-      
-     margin-right:50px;
-     
-     }
+    span{
+        margin-right: -205px;
+        font-size: small;
+    }
     
-     .navbar img{
-      height: 40px;
-  }
+    span a{
+       margin-left: 0;
+        font-size: 0.6rem;
+    }
     h2{
       letter-spacing:0;
       font-size:20px;
     }
 }
+
 form.search-btn input {
     position: relative;
     display: block;
@@ -282,18 +283,7 @@ form.search-btn button{
 
 
 @media screen and (max-width:768px){
-  .image-list-small {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    text-align: center; 
-    padding: 0;
-  }
-
-
-  .image-list-small li {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
+ 
 }
 
 .project-container{
@@ -318,6 +308,18 @@ form.search-btn button{
 }
 
 @media screen and (max-width:768px){
+  .image-list-small {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center; 
+    padding: 0;
+  }
+
+  .image-list-small li {
+    display: inline-block;
+    flex-wrap: wrap;
+  }
+   
   .pro{
     padding: 4px;
     border-radius: 20px;
