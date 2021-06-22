@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="row container">
+        <div class="leftside">
+            <header class="intro">
+                <div class="intro--content">
+                    <h1>Welcome to StartHub</h1>
+                    <p>A home for profiles and projects of our interns at <span>start.ng</span>
+                    </p>
+                </div>
+            </header>
+            <main>
+                <form>
+                    <h4>Welcome back! Please login to your account.</h4>
+                    <div class="details">
+                        <input type="text" placeholder="Email Address" required class="details__input">
+                        <input type="password" placeholder="Password" required class="details__input" id="myInput">
+                    </div>
+
+                    <div class="password">
+                        <div><input type="checkbox" onclick="myFunction()"><span>Show
+                                password</span></div>
+                        <a href="#" class="text-color">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit">Login</button>
+
+                    <div class="row account">
+                        <p class="text-color">Or login with</p>
+                        <div class="account_login">
+                            <i class="fa fa-google fa-fw"></i><a href="https://google.com">Google</a>
+                            <i class="fa fa-github fa-fw"></i><a href="https://github.com">Github</a>
+                        </div>
+                    </div>
+
+                    <p class="text-color">Don't have an account? <a href="#">Sign up here</a></p>
+                </form>
+            </main>
+        </div>
+
+        <div class="rightside logo">
+            <img src="starthub-logo.png" alt="StartHub Logo" q>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

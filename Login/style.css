@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(229, 229, 229, 0.41);
+}
+
+header {
+    max-width: 1000px;
+}
+
+.row {
+    display: flex;
+}
+
+.leftside {
+    background-color: #FFF;;
+    padding: 5.4em 8em;
+}
+
+.rightside {
+    text-align: center;
+    padding-top: 17em;
+}
+
+.logo {
+    margin-left: 4.8em;
+}
+
+.logo img {
+    width: 80%;
+}
+
+h1 {
+    color: #393B8D;
+    margin-bottom: -.2em;
+}
+
+.intro span {
+    font-weight: bold;
+}
+
+.intro p {
+    padding-bottom: 1em;
+}
+
+.intro--content {
+    width: 135%;
+}
+
+@media screen and (max-width: 1000px) {
+    .leftside {
+        padding: 5.4em 8em 0 5em;
+    }
+
+    .logo {
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+
+h4 {
+    font-weight: 100;
+    color: #000000c5;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1em;
+}
+
+.details__input {
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid #9e9b9b;
+    border-radius: 5px;
+    outline: none;
+    font-size: .9rem;
+}
+
+.details__input:hover, 
+.details__input:focus {
+    border-left: 3px solid #393B8D;
+}
+
+::placeholder {
+    color: #0000009C;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding-bottom: 1em;
+}
+
+.password span {
+    font-weight: 100;
+    color: #000000c5;
+}
+
+.password a {
+    margin-top: 1px;
+}
+
+button {
+    background-color: #393B8D;
+    color: #FFF;
+    width: 100%;
+    padding: 1em;
+    outline: none;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+button:hover {
+    background-color: #32347e;
+}
+
+button:focus {
+    border: 2px solid #5155d1;
+}
+
+@media screen and (max-width: 1000px) {
+    .details__input {
+        width: 120%;
+    }
+
+    ::placeholder {
+        font-size: .85rem;
+    }
+
+    .password {
+        width: 117%;
+    }
+
+    button {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .details__input {
+        width: 145%;
+    }
+
+    ::placeholder {
+        font-size: .84rem;
+    }
+
+    button {
+        width: 145%;
+    }
+}
+
+.account_login {
+    margin-top: 16px;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-color {
+    color: #000000c5;
+}
+
+@media screen and (max-width: 812px) {
+    .account {
+        width: 140%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .account {
+        width: 150%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .rightside {
+        display: none;
+    }
+    body {
+        background: #FFF;
+    }
+    .intro--content {
+        width: 120%;
+    }
+    .leftside {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 3em;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .details__input {
+        width: 100%;
+    }
+    .password {
+        width: 98%;
+    }
+    button {
+        width: 100%;
+    }
+    .account {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .details__input {
+        width: 120%;
+    }
+    .password {
+        width: 117%;
+    }
+    button {
+        width: 120%;
+    }
+    .account {
+        width: 120%;
+    }
+}
+@media screen and (max-width: 402px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .details__input {
+        width: 130%;
+    }
+    .password {
+        width: 127%;
+    }
+    button {
+        width: 130%;
+    }
+    .account {
+        width: 145%;
+    }
+}
+@media screen and (max-width: 402px) {
+    .account {
+        width: 155%;
+    }
+}
+@media screen and (max-width: 358px) {
+    .account {
+        width: 145%;
+        display: flex;
+        flex-direction: column;
+    }
+    .account p {
+        margin-bottom: -3px;
+    }
+}
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .details__input {
+        width: 170%;
+    }
+    .password {
+        width: 167%;
+    }
+    button {
+        width: 170%;
+    }
+    .account {
+        width: 145%;
+    }
+}
