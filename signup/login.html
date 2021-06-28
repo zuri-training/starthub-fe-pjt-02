@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-signin-client_id" content="561394349930-sg3q8cqbseco8i6nm11c4qkjl0jt8apc.apps.googleusercontent.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../assets/style.css">
+    
+    <title>Login</title>
+    <style>
+        #form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="form" class="form-group form-container">
+        <div class="row">
+            <div id='content' class="text-center"></div>
+        </div>
+        <div class="row">
+            <button onclick="signOut()" class="btn btn-primary mt-3">Sign out</button>
+        </div>
+    </div>
+    
+    <div id="close" class="form-group form-container">
+        <h5 class="form-label mt-4 text-center">Sign In with: </h5>
+            <div class="">
+                <div class="row">
+                    <div class="col">
+                        <div id="my-signin2" class="g-signin2" data-width="300" data-height="50" data-longtitle="true" data-onsuccess="onSignIn"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary mt-3"><i class="fab fa-github mx-5"></i>Login With Github</button>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+    </body>
+      <script src="./log.js"></script>
+      <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+</body>
+</html>
