@@ -45,6 +45,7 @@ a:hover {
   align-items: center;
 }
 .left {
+  background: linear-gradient(rgba(92, 92, 92, 0), rgba(0, 0, 0, 0.5));
   background-size: cover;
 }
 
@@ -54,20 +55,12 @@ a:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.right > h2, p, a, strong {
-  color: white;
-}
 
 .left p {
   font-weight: 400;
 }
-.right {
-  background-color: #393B8D;
-  background-size: cover;
-  color: white;
-}
 .right .copy {
-  color: white;
+  color: black;
   text-align: center;
 }
 .right .copy p {
@@ -77,13 +70,19 @@ a:hover {
 .right form {
   width: 328px;
 }
+
+.login-container {
+  align-items: center;
+  text-align: center;
+}
+
 form input[type='text'],
 form input[type='email'],
 form input[type='password'] {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 8px;
   border: 1px solid #c4c4c4;
   padding: 1em;
   margin-bottom: 1.25rem;
@@ -159,12 +158,12 @@ label {
 .signup-btn {
   display: block;
   width: 100%;
-  background-color: white;
-  color: var(--primary-blue);
+  background-color: var(--primary-blue);
+  color: white;
   font-weight: 700;
   border: none;
   padding: 1rem;
-  border-radius: 2px;
+  border-radius: 8px;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -180,7 +179,7 @@ label {
     flex-direction: row;
     height: 100vh;
   }
-  .right, .left {
+  .left, .right {
     display: flex;
     width: 50%;
     height: auto;

@@ -12,55 +12,61 @@
 </head>
 <body>
     <div class="split-screen">
-       <div class="right">
-        <form>
-            <section class="copy">
-                <h2>CREATE AN ACCOUNT</h2>
+      
+
+        <div class="right">
+            <form>
+                <section class="copy">
+                    <h2>CREATE AN ACCOUNT</h2>
+                </section>
+                <div class="input-container name">
+                    <label for="fname">Full Name</label>
+                    <input id='fname' type="text" name="fname">
+                </div>
+                <div class="input-container email">
+                    <label for="email">Email</label>
+                    <input id='email' type="email" name="email">
+                </div>
+                <div class="input-container password">
+                    <label for="password">Password</label>
+                    <input id='password' placeholder="Must be at least 6 characters" type="password" name="password">
+                    <i class="far fa-eye-slash"></i>
+                </div>
+                <div class="input-container password">
+                    <label for="password">Confirm Password</label>
+                    <input id='password' placeholder="Must be at least 6 characters" type="password" name="password">
+                    <i class="far fa-eye-slash"></i>
+                </div>
+                <div class="input-container cta">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <section class="copy-legal">
+                            <p><span class="small">I read and agree to &amp; <a href="#">Terms and Conditions</a></span></p>
+                        </section>
+                    </label>
+                </div>
+    
+                <button class="signup-btn" type="submit">Create Account</button>
                 <div class="login-container">
                     <p>Already have an account? <a href="../signup/login.html"><strong>Log In</strong></a></p>
                 </div>
-            </section>
-            <div class="input-container name">
-                <label for="fname">Full Name</label>
-                <input id='fname' type="text" name="fname">
-            </div>
-            <div class="input-container email">
-                <label for="email">Email</label>
-                <input id='email' type="email" name="email">
-            </div>
-            <div class="input-container password">
-                <label for="password">Password</label>
-                <input id='password' placeholder="Must be at least 6 characters" type="password" name="password">
-                <i class="far fa-eye-slash"></i>
-            </div>
-            <div class="input-container password">
-                <label for="password">Confirm Password</label>
-                <input id='password' placeholder="Must be at least 6 characters" type="password" name="password">
-                <i class="far fa-eye-slash"></i>
-            </div>
-            <div class="input-container cta">
-                <label class="checkbox-container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <section class="copy-legal">
-                        <p><span class="small">I read and agree to &amp; <a href="#">Terms and Conditions</a></span></p>
-                    </section>
-                </label>
-            </div>
-
-            <button class="signup-btn" type="submit">Create Account</button>
-           
-        </form>
-       </div>
+                <div class="login-container">
+                    <p>Or sign up with <a href="/"><i class="fab fa-google"></i> Google</a>  <a href="/"><i class="fab fa-github"></i> Github</a></p>
+                </div>
+            </form>
+        </div>
 
         <div class="left">
             <section class="copy">
-                <img width="400" height="150" src="/img/logo1.jpg" alt="" srcset="">
+                <img src="/img/logo1.jpg" alt="" srcset="">
             </section>
-        </div>
+           </div>
     </div>
     
    
     </body>
+      <script src="./log.js"></script>
+      <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 </html>
