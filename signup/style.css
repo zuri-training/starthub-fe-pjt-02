@@ -45,7 +45,7 @@ a:hover {
   align-items: center;
 }
 .left {
-  background: linear-gradient(rgba(92, 92, 92, 0), rgba(0, 0, 0, 0.5));
+  background: rgba(229, 229, 229, 0.41);
   background-size: cover;
 }
 

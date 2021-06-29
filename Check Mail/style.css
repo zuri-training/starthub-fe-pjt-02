@@ -1,0 +1,105 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #233975;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+ 
+  .split-screen {
+    display: flex;
+    flex-direction: column;
+  }
+  .mail-info{
+    margin: 0 auto;
+  }
+  .mail-logo{
+    text-align: center;
+  }
+
+  .mail-logo img{
+   text-align: center;
+  }
+  .info{
+    margin: 0 auto;
+  }
+  h2{
+    font-family: open sans-serif;
+    color: #233975;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  p{
+    text-align: center;
+    font-family: open sans-serif;
+  }
+  .mail-btn{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .open-mail{
+    margin-top: 40px;
+    width: 100%;
+    background:#363A99;;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    padding: 20px 60px;
+    font-family: open sans-serif;
+    text-align: center;
+    border: none;
+    outline: none;
+  }
+
+  .footer{
+    margin-top: 40px;
+  }
+
+.footer a{
+  text-decoration: none;
+}
+  .left {
+    height: 200px;
+  }
+  .left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    background: rgba(229, 229, 229, 0.41);
+    background-size: cover;
+  }
+  
+  .left .copy {
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .left p {
+    font-weight: 400;
+  }
+ 
+  
+  /* Media Queries */
+  @media screen and (min-width: 900px) {
+    .split-screen {
+      flex-direction: row;
+      height: 100vh;
+    }
+    .left, .right {
+      display: flex;
+      width: 50%;
+      height: auto;
+    }
+  }
