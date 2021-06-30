@@ -6,6 +6,17 @@ body {
     margin: 0;
     background-color: rgba(229, 229, 229, 0.41);
 }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+  }
+  .logo{
+    float:left;
+    margin-left: 40px;
+    margin: 20px 0 30px 0;
+    height: 30px;
+  }
 
 header {
     max-width: 1000px;
