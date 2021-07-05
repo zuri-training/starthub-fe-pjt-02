@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    border-right: 5vw solid #2E3192;
+    /* background-color: blue; */
+}
+
+main {
+    background-color: white;
+}
+
+h4 {
+    margin-top: 55px !important;
+}
+
+header, footer {
+    /* margin: auto 35px; */
+    /* padding: 25px; */
+    background-color: #2E3192;
+}
+
+.navbar-brand {
+    margin-left: -22px;
+    margin-top: -13px;
+    margin-bottom: -13px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 20px !important;
+}
+
+nav a {
+    text-decoration: none;
+    color: #737A82;
+}
+
+nav ul li {
+    margin-right: 20px;
+    /* font-size: 1.3rem; */
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2rem;
+}
+
+section {
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+  height: auto;
+}
+
+.first-section {
+    text-align: center;
+    margin: 12px;
+}
+
+.first-section-div p:nth-child(2) {
+    font-family: Open Sans;
+font-weight: bold;
+font-size: 50px;
+text-align: center;
+color: #363A99;
+}
+
+.first-section-div p:nth-child(3) {
+    font-family: Roboto;
+font-weight: 500;
+font-size: 35px;
+line-height: 41px;
+}
+
+.first-section-div p:nth-child(5) {
+    font-family: Roboto;
+font-weight: bold;
+font-size: 30px;
+line-height: 35px;
+margin-top: 100px;
+}
+
+
+
+
+.second-section h3, .second-section h4 {
+    text-align: center;
+    margin: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    align-items: center;
+}
+
+.social p {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 33px;
+}
+
+footer {
+    /* height: %; */
+}
+
+footer div {
+    width: 213px;
+    height: 35px;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+}
+
