@@ -1,8 +1,9 @@
-const form = document.getElementById("loginForm");
-const errorMessage = document.getElementById("errorMessage");
+let form = document.getElementById("loginForm");
+let errorMessage = document.getElementById("errorMessage");
+let passwordInput = document.getElementById("passwordValue");
+let emailInput = document.getElementById("emailValue");
 
 const showPassword = () => {
-    var passwordInput = document.getElementById("passwordValue");
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
     } else {
@@ -26,7 +27,9 @@ const login = (e) => {
             window.location.href = "http://127.0.0.1:5500/Landing%20page/index.html";
         })
         .catch(function(error) {
-            errorMessage.innerText = 'Please proovide valid login details'
+            errorMessage.innerText = 'Please provide valid login details'
+            emailInput.classList.add("redBorder")
+            passwordInput.classList.add("redBorder")
         })
 }
 form.addEventListener('submit', login);
