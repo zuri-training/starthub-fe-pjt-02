@@ -61,6 +61,9 @@ h1 {
     width: 135%;
 }
 
+#errorMessage{
+    color: red;
+}
 @media screen and (max-width: 1000px) {
     .leftside {
         padding: 5.4em 8em 0 5em;

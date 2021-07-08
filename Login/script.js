@@ -1,4 +1,5 @@
 const form = document.getElementById("loginForm");
+const errorMessage = document.getElementById("errorMessage");
 
 const showPassword = () => {
     var passwordInput = document.getElementById("passwordValue");
@@ -25,7 +26,7 @@ const login = (e) => {
             window.location.href = "http://127.0.0.1:5500/Landing%20page/index.html";
         })
         .catch(function(error) {
-            console.log(error);
+            errorMessage.innerText = 'Please proovide valid login details'
         })
 }
 form.addEventListener('submit', login);
