@@ -24,15 +24,15 @@
                 </div>
             </header>
             <main>
-                <form>
+                <form id='loginForm'>
                     <h4>Welcome back! Please login to your account.</h4>
                     <div class="details">
                         <input type="text" placeholder="Email Address" required class="details__input">
-                        <input type="password" placeholder="Password" required class="details__input" id="myInput">
+                        <input type="password" placeholder="Password" required class="details__input" id="passwordValue">
                     </div>
 
                     <div class="password">
-                        <div><input type="checkbox" onclick="myFunction()"><span>Show
+                        <div><input type="checkbox" onclick="showPassword()"><span>Show
                                 password</span></div>
                         <a href="#" class="text-color">Forgot Password?</a>
                     </div>
@@ -57,7 +57,7 @@
             <img src="images/starthub-logo.png" alt="StartHub Logo">
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 
